@@ -1,4 +1,4 @@
-## Project Goal
+## Overview
 
 The organization requires a Bank Security Application that allows users to access banking services securely. The application provides features such as account creation, card selection, and investment options. It also includes an Admin Panel for authorized users to view user and account information.
 
@@ -74,7 +74,7 @@ The application allows users to:
 
 ## Security Implementation
 
-JWT Authentication for secure access.
+JWT Authentication for secure access:
 
 * JwtRequest and JwtResponse DTOs.
 
@@ -90,7 +90,7 @@ JWT Authentication for secure access.
 
 ## API Endpoints
 
-### UserController
+### User Endpoints
 
 | Method       | Endpoint       | Description                                  |
 | ------------ |:---------------|:---------------------------------------------|
@@ -98,7 +98,7 @@ JWT Authentication for secure access.
 | POST         | /user/register | Registers a new user with the role CUSTOMER  |
 
 
-### UserAccountController
+### UserAccount Endpoints
 
 | Method       | Endpoint                           | Description                     |
 | ------------ |:-----------------------------------|:--------------------------------|
@@ -112,7 +112,7 @@ JWT Authentication for secure access.
 | GET          | /account/getAccount/summary        | Fetches account summary         |
 
 
-### UserCardController
+### UserCard Endpoints
 
 | Method       | Endpoint        | Description                        |
 | ------------ |:----------------|:-----------------------------------|
@@ -121,14 +121,14 @@ JWT Authentication for secure access.
 | PUT          | /card/setting   | Updates card settings (limit, PIN) |
 
 
-### UserInvestmentController
+### UserInvestment Endpoints
 
 | Method       | Endpoint    | Description                                                |
 | ------------ |:------------|:-----------------------------------------------------------|
 | POST         | /invest/now | Creates an investment if the account balance is sufficient |
 
 
-### AdminController
+### Admin Endpoints
 
 | Method       | Endpoint                               | Description                |
 | ------------ |:---------------------------------------|:---------------------------|
