@@ -45,44 +45,28 @@ The application allows users to:
 ## Database Schema & Entities
 
 1. Enums:
-
-* AccountType
-
-* BranchType
-
-* CardType
-
-* InvestmentType
+   * AccountType
+   * BranchType
+   * CardType
+   * InvestmentType
 
 2. Entity Classes:
-
-* Account (Attributes: ID, Type, Status, Balance, Interest Rate, Branch, Proof, Opening Date, Number, Nominee, Card, User)
-
-* Card (Attributes: ID, Number, Holder Name, Type, Daily Limit, CVV, Allocation & Expiry Date, PIN, Status)
-
-* Investment (Attributes: ID, Type, Risk, Amount, Returns, Duration, Company Name, User)
-
-* Nominee (Attributes: ID, Relation, Name, Account Number, Gender, Age)
-
-* Role (Attributes: ID, Role Name)
-
-* User (Attributes: ID, Name, Username, Password, Address, Contact Number, Identity Proof, Roles, Accounts, Investments)
+   * Account (Attributes: ID, Type, Status, Balance, Interest Rate, Branch, Proof, Opening Date, Number, Nominee, Card, User)
+   * Card (Attributes: ID, Number, Holder Name, Type, Daily Limit, CVV, Allocation & Expiry Date, PIN, Status)
+   * Investment (Attributes: ID, Type, Risk, Amount, Returns, Duration, Company Name, User)
+   * Nominee (Attributes: ID, Relation, Name, Account Number, Gender, Age)
+   * Role (Attributes: ID, Role Name)
+   * User (Attributes: ID, Name, Username, Password, Address, Contact Number, Identity Proof, Roles, Accounts, Investments)
 
 3. DTO Classes:
-
-* AccountDto, AdminDto, CardDto, InvestmentDto, KycDto, NomineeDto, UserDto
+   * AccountDto, AdminDto, CardDto, InvestmentDto, KycDto, NomineeDto, UserDto
 
 4. Repository Interfaces:
-
-* AccountRepository (findByAccountNumber, findAllActiveAccounts, etc.)
-
-* CardRepository (findByCardNumber)
-
-* InvestmentRepository
-
-* NomineeRepository
-
-* UserRepository (findByUsername)
+   * AccountRepository (findByAccountNumber, findAllActiveAccounts, etc.)
+   * CardRepository (findByCardNumber)
+   * InvestmentRepository
+   * NomineeRepository
+   * UserRepository (findByUsername)
 
 
 ---
@@ -90,7 +74,7 @@ The application allows users to:
 
 ## Security Implementation
 
-* JWT Authentication for secure access.
+JWT Authentication for secure access.
 
 * JwtRequest and JwtResponse DTOs.
 
